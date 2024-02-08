@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* 
+{
+    color: #ffffff;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+html, body, :root 
+{
+    min-height: 100dvh;
+    background-color: #0B0D17;
+}
+
+@import 'swiper';
+
+.home-background {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    @media (max-width: 1320px) {
+        background-image: url('../assets/home/background-home-tablet.jpg');
+    }
+
+    @media (max-width: 425px) {
+        background-image: url('../assets/home/background-home-mobile.jpg');
+    }
+}
+
+.destination-background {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+
+    @media (max-width: 425px) {
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+    }
+}
+
+.crew-background {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url('../assets/crew/background-crew-tablet.jpg');
+    }
+
+    @media (max-width: 425px) {
+        background-image: url('../assets/crew/background-crew-mobile.jpg');
+    }
+}
+
+.technology-background {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+    }
+
+    @media (max-width: 425px) {
+        background-image: url('../assets/technology/background-technology-mobile.jpg');
+    }
+}
+
+.glass 
+{
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
